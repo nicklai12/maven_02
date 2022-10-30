@@ -89,4 +89,25 @@
       </dependency>
     </dependencies>
   </dependencyManagement>
+
+  <profiles>
+    <profile>
+      <id>develop</id>
+      <properties>
+        <jdbc.driver>com.mysql.cj.jdbc.Driver</jdbc.driver>
+        <jdbc.url>jdbc:mysql://192.168.99.100:3306/DevDb</jdbc.url>
+        <jdbc.username>pg</jdbc.username>
+        <jdbc.password>pg</jdbc.password>
+      </properties>
+    </profile>
+  </profiles>
+
+  <build>
+    <resources>
+      <resource>
+        <directory>${project.basedir}/src/main/resources</directory>
+        <filtering>true</filtering>
+      </resource>
+    </resources>
+  </build>
 </project>
