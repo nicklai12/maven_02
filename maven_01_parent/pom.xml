@@ -99,6 +99,9 @@
         <jdbc.username>pg</jdbc.username>
         <jdbc.password>pg</jdbc.password>
       </properties>
+      <activation>
+        <activeByDefault>true</activeByDefault>
+      </activation>
     </profile>
   </profiles>
 
